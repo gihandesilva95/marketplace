@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "a3f8b2a5-d897-4e90-988f-6e487c610737",
+		"name": "API_Document",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/register?name=Gihan Harshana&email=gihanharshana95@gmail.com&password=gihan12345",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Gihan Harshana"
+						},
+						{
+							"key": "email",
+							"value": "gihanharshana95@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "gihan12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/login?email=gihanharshana95@gmail.com&password=gihan12345",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "gihanharshana95@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "gihan12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Product_(hp laplop)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWQ2MzJkNWUzYjc5NTM1ZmZjZmM5ODRhYTI0NTBkNDVlNDg1NTZhZDE4YjIyZTJlMGJjMjE2NjBiZDQxOWIxMzI3ZDQ5MjE3ZjJiMzIyOTUiLCJpYXQiOjE2ODAzNzUxNjcuNTU1MjE5LCJuYmYiOjE2ODAzNzUxNjcuNTU1MjI0LCJleHAiOjE3MTE5OTc1NjcuNDM3MTMxLCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.G4CtCFYU-Tuxh_H7APTFUTfD3OozcfRqUJyKfZD3LOGDKDNLRL9Oagqh2mSTu8Zxr62uno5Y5ByE3HbUqW3em5_YEIoSCkCPMP5b5ki-De9gJRShTkH-xYdGbFqqjzoQGZmhpjFUP391JssVaRwTYZTShWLSmMBRahQdKj_OAG9LZ8snLhmL-fFYWm6sFTUeZmajkR3jKe8mzs54panf2zsthu6P0c5WoGxBciG_DkZOtka-cYBsTLsiYNaFWJq8ohsjv0ZMwvib6esbdhJOJ5qyOwJCMY67lnp-IJMNUdsxhjMghQqvh0zmsYzfG_2BR0K_0QFfkwydP4BBPuMw4f9vtJjqFHISVJyNp0XlUwr7v-GI9KwQCg7Sh4m3DjWFawWP9Bl6VDo-g9wlASQ4AqOnb9huCjw3wgVgj0sq-6h8x1RCO7x7qsStZpuNsaChXkF5pHxWKqlJxXn-qgY4s04as8NPYsfOXxBvQB-UfdyYz9hzLJzqKXMi2csRijkYPh7whcDAB4TwJaFY_j7ZlPmDQqCo4IJHD6i8PdXMFPrP1ihX1IchUiwJo5dwNHr_QeJz3E0KOc-4m8bb9r0x3KKS-iV0JJnP8hDzCUodT-HcX1abwIatFAxFCBDyUIm9JYlMC9kTSAH_kqK_lBQKlAdCcC5x2_uXv_aBUeqUsvQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/gihan harshana/Desktop/download.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/store?name=HP laptop&description=Brand new i5 11gen&price=154000.00&stock=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"store"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "HP laptop"
+						},
+						{
+							"key": "description",
+							"value": "Brand new i5 11gen"
+						},
+						{
+							"key": "price",
+							"value": "154000.00"
+						},
+						{
+							"key": "stock",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Product_(Dell laplop)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWQ2MzJkNWUzYjc5NTM1ZmZjZmM5ODRhYTI0NTBkNDVlNDg1NTZhZDE4YjIyZTJlMGJjMjE2NjBiZDQxOWIxMzI3ZDQ5MjE3ZjJiMzIyOTUiLCJpYXQiOjE2ODAzNzUxNjcuNTU1MjE5LCJuYmYiOjE2ODAzNzUxNjcuNTU1MjI0LCJleHAiOjE3MTE5OTc1NjcuNDM3MTMxLCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.G4CtCFYU-Tuxh_H7APTFUTfD3OozcfRqUJyKfZD3LOGDKDNLRL9Oagqh2mSTu8Zxr62uno5Y5ByE3HbUqW3em5_YEIoSCkCPMP5b5ki-De9gJRShTkH-xYdGbFqqjzoQGZmhpjFUP391JssVaRwTYZTShWLSmMBRahQdKj_OAG9LZ8snLhmL-fFYWm6sFTUeZmajkR3jKe8mzs54panf2zsthu6P0c5WoGxBciG_DkZOtka-cYBsTLsiYNaFWJq8ohsjv0ZMwvib6esbdhJOJ5qyOwJCMY67lnp-IJMNUdsxhjMghQqvh0zmsYzfG_2BR0K_0QFfkwydP4BBPuMw4f9vtJjqFHISVJyNp0XlUwr7v-GI9KwQCg7Sh4m3DjWFawWP9Bl6VDo-g9wlASQ4AqOnb9huCjw3wgVgj0sq-6h8x1RCO7x7qsStZpuNsaChXkF5pHxWKqlJxXn-qgY4s04as8NPYsfOXxBvQB-UfdyYz9hzLJzqKXMi2csRijkYPh7whcDAB4TwJaFY_j7ZlPmDQqCo4IJHD6i8PdXMFPrP1ihX1IchUiwJo5dwNHr_QeJz3E0KOc-4m8bb9r0x3KKS-iV0JJnP8hDzCUodT-HcX1abwIatFAxFCBDyUIm9JYlMC9kTSAH_kqK_lBQKlAdCcC5x2_uXv_aBUeqUsvQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/gihan harshana/Desktop/download.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/store?name=Dell Laptop&description=3 months used i7 11gen&price=112000.00&stock=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"store"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Dell Laptop"
+						},
+						{
+							"key": "description",
+							"value": "3 months used i7 11gen"
+						},
+						{
+							"key": "price",
+							"value": "112000.00"
+						},
+						{
+							"key": "stock",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get details of a product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWQ2MzJkNWUzYjc5NTM1ZmZjZmM5ODRhYTI0NTBkNDVlNDg1NTZhZDE4YjIyZTJlMGJjMjE2NjBiZDQxOWIxMzI3ZDQ5MjE3ZjJiMzIyOTUiLCJpYXQiOjE2ODAzNzUxNjcuNTU1MjE5LCJuYmYiOjE2ODAzNzUxNjcuNTU1MjI0LCJleHAiOjE3MTE5OTc1NjcuNDM3MTMxLCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.G4CtCFYU-Tuxh_H7APTFUTfD3OozcfRqUJyKfZD3LOGDKDNLRL9Oagqh2mSTu8Zxr62uno5Y5ByE3HbUqW3em5_YEIoSCkCPMP5b5ki-De9gJRShTkH-xYdGbFqqjzoQGZmhpjFUP391JssVaRwTYZTShWLSmMBRahQdKj_OAG9LZ8snLhmL-fFYWm6sFTUeZmajkR3jKe8mzs54panf2zsthu6P0c5WoGxBciG_DkZOtka-cYBsTLsiYNaFWJq8ohsjv0ZMwvib6esbdhJOJ5qyOwJCMY67lnp-IJMNUdsxhjMghQqvh0zmsYzfG_2BR0K_0QFfkwydP4BBPuMw4f9vtJjqFHISVJyNp0XlUwr7v-GI9KwQCg7Sh4m3DjWFawWP9Bl6VDo-g9wlASQ4AqOnb9huCjw3wgVgj0sq-6h8x1RCO7x7qsStZpuNsaChXkF5pHxWKqlJxXn-qgY4s04as8NPYsfOXxBvQB-UfdyYz9hzLJzqKXMi2csRijkYPh7whcDAB4TwJaFY_j7ZlPmDQqCo4IJHD6i8PdXMFPrP1ihX1IchUiwJo5dwNHr_QeJz3E0KOc-4m8bb9r0x3KKS-iV0JJnP8hDzCUodT-HcX1abwIatFAxFCBDyUIm9JYlMC9kTSAH_kqK_lBQKlAdCcC5x2_uXv_aBUeqUsvQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/getproduct?product_id=20",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getproduct"
+					],
+					"query": [
+						{
+							"key": "product_id",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product list by seller",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWQ2MzJkNWUzYjc5NTM1ZmZjZmM5ODRhYTI0NTBkNDVlNDg1NTZhZDE4YjIyZTJlMGJjMjE2NjBiZDQxOWIxMzI3ZDQ5MjE3ZjJiMzIyOTUiLCJpYXQiOjE2ODAzNzUxNjcuNTU1MjE5LCJuYmYiOjE2ODAzNzUxNjcuNTU1MjI0LCJleHAiOjE3MTE5OTc1NjcuNDM3MTMxLCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.G4CtCFYU-Tuxh_H7APTFUTfD3OozcfRqUJyKfZD3LOGDKDNLRL9Oagqh2mSTu8Zxr62uno5Y5ByE3HbUqW3em5_YEIoSCkCPMP5b5ki-De9gJRShTkH-xYdGbFqqjzoQGZmhpjFUP391JssVaRwTYZTShWLSmMBRahQdKj_OAG9LZ8snLhmL-fFYWm6sFTUeZmajkR3jKe8mzs54panf2zsthu6P0c5WoGxBciG_DkZOtka-cYBsTLsiYNaFWJq8ohsjv0ZMwvib6esbdhJOJ5qyOwJCMY67lnp-IJMNUdsxhjMghQqvh0zmsYzfG_2BR0K_0QFfkwydP4BBPuMw4f9vtJjqFHISVJyNp0XlUwr7v-GI9KwQCg7Sh4m3DjWFawWP9Bl6VDo-g9wlASQ4AqOnb9huCjw3wgVgj0sq-6h8x1RCO7x7qsStZpuNsaChXkF5pHxWKqlJxXn-qgY4s04as8NPYsfOXxBvQB-UfdyYz9hzLJzqKXMi2csRijkYPh7whcDAB4TwJaFY_j7ZlPmDQqCo4IJHD6i8PdXMFPrP1ihX1IchUiwJo5dwNHr_QeJz3E0KOc-4m8bb9r0x3KKS-iV0JJnP8hDzCUodT-HcX1abwIatFAxFCBDyUIm9JYlMC9kTSAH_kqK_lBQKlAdCcC5x2_uXv_aBUeqUsvQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/productlist",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"productlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get seller details for a product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWQ2MzJkNWUzYjc5NTM1ZmZjZmM5ODRhYTI0NTBkNDVlNDg1NTZhZDE4YjIyZTJlMGJjMjE2NjBiZDQxOWIxMzI3ZDQ5MjE3ZjJiMzIyOTUiLCJpYXQiOjE2ODAzNzUxNjcuNTU1MjE5LCJuYmYiOjE2ODAzNzUxNjcuNTU1MjI0LCJleHAiOjE3MTE5OTc1NjcuNDM3MTMxLCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.G4CtCFYU-Tuxh_H7APTFUTfD3OozcfRqUJyKfZD3LOGDKDNLRL9Oagqh2mSTu8Zxr62uno5Y5ByE3HbUqW3em5_YEIoSCkCPMP5b5ki-De9gJRShTkH-xYdGbFqqjzoQGZmhpjFUP391JssVaRwTYZTShWLSmMBRahQdKj_OAG9LZ8snLhmL-fFYWm6sFTUeZmajkR3jKe8mzs54panf2zsthu6P0c5WoGxBciG_DkZOtka-cYBsTLsiYNaFWJq8ohsjv0ZMwvib6esbdhJOJ5qyOwJCMY67lnp-IJMNUdsxhjMghQqvh0zmsYzfG_2BR0K_0QFfkwydP4BBPuMw4f9vtJjqFHISVJyNp0XlUwr7v-GI9KwQCg7Sh4m3DjWFawWP9Bl6VDo-g9wlASQ4AqOnb9huCjw3wgVgj0sq-6h8x1RCO7x7qsStZpuNsaChXkF5pHxWKqlJxXn-qgY4s04as8NPYsfOXxBvQB-UfdyYz9hzLJzqKXMi2csRijkYPh7whcDAB4TwJaFY_j7ZlPmDQqCo4IJHD6i8PdXMFPrP1ihX1IchUiwJo5dwNHr_QeJz3E0KOc-4m8bb9r0x3KKS-iV0JJnP8hDzCUodT-HcX1abwIatFAxFCBDyUIm9JYlMC9kTSAH_kqK_lBQKlAdCcC5x2_uXv_aBUeqUsvQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/sellerdetails?product_id=21",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sellerdetails"
+					],
+					"query": [
+						{
+							"key": "product_id",
+							"value": "21"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
